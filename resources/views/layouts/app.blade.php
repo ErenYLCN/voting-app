@@ -16,7 +16,7 @@
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
-    <body class="font-sans text-sm text-gray-900S bg-gray-background">
+    <body class="font-sans text-sm text-gray-900 bg-gray-background">
         
         <header class="flex items-center justify-between px-8 py-4">
             <a href="#" class="flex items-center space-x-1"> 
@@ -54,7 +54,45 @@
 
         <main class="container mx-auto flex max-w-custom">
             <div class="mr-5 w-70">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nam repudiandae? Dignissimos soluta quos totam rem odit nihil illum voluptatibus dolorum odio, ipsum impedit. Dolores consequuntur quibusdam hic placeat voluptatibus officiis, tempora enim fuga maxime beatae sequi unde minima, et laudantium assumenda excepturi vero rem aliquid harum, quam odio sunt!
+                <div class="bg-white rounded-xl mt-16" 
+                 style="
+                 border-width: 2px;
+                 border-style: solid;
+                 border-image: 
+                    linear-gradient(
+                    to bottom, 
+                    #328af1, 
+                    rgba(0, 0, 0, 0)
+                    ) 1 100%;">
+                    <div class="text-center px-6 py-2 pt-6">
+                        <h3 class="text-gray-900 font-semibold text-base">Add an idea</h3>
+                        <div class="text-gray-900 text-xs mt-4">Let us know what you would like and we'll take a look over!</div>
+                    </div>
+                    
+                    <form action="#" method="POST" class="space-y-4 px-4 py-6">
+                        <input type="text" class="w-full bg-gray-100 rounded-xl text-sm font-semibold placeholder-gray-600 border-none" placeholder="Your Idea">
+                        <div>
+                            <select name="category_add" id="category_add" class="border-none w-full rounded-xl px-4 py-2 bg-gray-100 text-sm font-semibold text-gray-600">
+                                <option value="Category One">Category One</option>
+                                <option value="Category Two">Category Two</option>
+                                <option value="Category Three">Category Three</option>
+                                <option value="Category Four">Category Four</option>
+                            </select>
+                        </div>
+                        <div>
+                            <textarea name="idea" id="idea" cols="30" rows="4" class="w-full bg-gray-100 rounded-xl placeholder-gray-600 text-sm px-4 py-2 border-none" placeholder="Describe your idea.."></textarea>
+                        </div>
+                        <div class="flex items-center justify-between space-x-3">
+                            <button type="button" class="bg-gray-200 w-1/2 rounded-xl flex items-center justify-center space-x-1 px-6 py-2 text-xs font-semibold border border-gray-200 hover:border-gray-400 transition duration-150 ease-in">
+                                <svg class="w-4 h-4 text-gray-500 transform -rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"></path></svg>
+                                <span>Attach</span>
+                            </button>
+                            <button type="submit" class="bg-blue w-1/2 text-white rounded-xl px-6 py-2 text-xs font-semibold hover:bg-blue-hover transition duration-150 ease-in">
+                                <span>Submit</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
             <div class="w-175">
                 <nav class="flex items-center justify-between text-xs">
@@ -73,6 +111,9 @@
                 <div class="mt-8">
                     {{ $slot }}
                 </div>
+            </div>
+            <div class=" w-28 invisible">
+
             </div>
         </main>
 
