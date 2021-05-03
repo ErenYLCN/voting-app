@@ -18,7 +18,7 @@
     </head>
     <body class="font-sans text-sm text-gray-900 bg-gray-background">
         
-        <header class="flex items-center justify-between px-8 py-4">
+        <header class="flex items-center justify-between px-8 py-4 border-b border-gray-200 shadow-sm">
             <a href="#" class="flex items-center space-x-1"> 
                 <img src="{{ asset('img/vote-logo.svg') }}" class="w-8 h-8" alt="logo">
                 <span class="text-3xl font-semibold text-blue">V<span class="text-xl">ote</span><span class="text-blue-hover text-2xl">M</span><span class="text-blue-hover text-xl">e</span></span>
@@ -52,7 +52,7 @@
             </div>
         </header>
 
-        <main class="container mx-auto flex max-w-custom">
+        <main class="container mx-auto flex max-w-custom mt-6">
             <div class="mr-5 w-70">
                 <div class="bg-white rounded-xl mt-16" 
                  style="

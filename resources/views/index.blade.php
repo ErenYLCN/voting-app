@@ -23,51 +23,55 @@
     </div>
 
     <div class="ideas-container space-y-6 my-6">
-        <div class="idea-container bg-white rounded-xl flex hover:shadow-card transition duration-350 ease-in cursor-pointer">
-            <div class="border-r border-gray-100 px-5 py-8">
-                <div class="text-center">
-                    <div class="font-semibold text-2xl">12</div>
-                    <div class="text-gray-500">Votes</div>
-                </div>
-                <div class="mt-8">
-                    <button class="w-20 bg-gray-200 font-bold text-xs uppercase rounded-xl px-4 py-3 border border-gray-200 hover:border-gray-400 transition duration-150 ease-in">Vote</button>
-                </div>
-            </div>
-            <div class="flex px-2 py-6">
-                <a href="#" class="flex-none">
-                    <img src="https://source.unsplash.com/200x200/?face&crop=face&v=1" alt="avatar" class="w-14 h-14 rounded-xl">
-                </a>
-                <div class="mx-4">
-                    <h4 class="text-xl font-semibold">
-                        <a href="#" class="hover:underline">Zeynep is the cutest girl in the world</a>
-                    </h4>
-                    <div class="text-gray-600 mt-3 line-clamp-3">
-                        Zeynep is amazing because Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea fugiat ratione culpa impedit voluptas aliquam necessitatibus recusandae odio accusamus cum at deserunt earum, doloribus laboriosam voluptate atque libero! Dolorum, odio! Qui eligendi consequuntur assumenda quos alias distinctio ratione ipsa eum suscipit reprehenderit, obcaecati rem debitis facilis expedita sint nam temporibus aliquid cumque officia dolores dolorum quas omnis porro aspernatur. Ex debitis voluptas id iusto corporis vero, ea amet quos facere obcaecati mollitia cupiditate voluptatibus exercitationem voluptatum perspiciatis? Tempora obcaecati odit, quis quos excepturi dolores, fuga minima dignissimos aut vitae aspernatur harum architecto delectus voluptates officia nostrum, consectetur animi. Beatae, quod.
+        <a href="/idea">
+            <div class="idea-container bg-white rounded-xl flex hover:shadow-card transition duration-350 ease-in cursor-pointer">
+                <div class="border-r border-gray-100 px-5 py-8">
+                    <div class="text-center">
+                        <div class="font-semibold text-2xl">12</div>
+                        <div class="text-gray-500">Votes</div>
                     </div>
-                    <div class="flex justify-between mt-6">
-                        <div class="flex items-center text-xs font-semibold space-x-2 text-gray-400">
-                            <span>10 hours ago</span>
-                            <div>&bull;</div>
-                            <span>Category 1</span>
-                            <div>&bull;</div>
-                            <span class="text-gray-700">3 Comments</span>
+                    <div class="mt-8">
+                        <button class="w-20 bg-gray-200 font-bold text-xs uppercase rounded-xl px-4 py-3 border border-gray-200 hover:border-gray-400 transition duration-150 ease-in">Vote</button>
+                    </div>
+                </div>
+                <div class="flex flex-1 px-2 py-6">
+                    <div class="flex-none">
+                        <a href="#">
+                            <img src="https://source.unsplash.com/200x200/?face&crop=face&v=1" alt="avatar" class="w-14 h-14 rounded-xl">
+                        </a>
+                    </div>
+                    <div class="mx-4 w-full">
+                        <h4 class="text-xl font-semibold">
+                            <a href="/idea" class="hover:underline">Zeynep is the cutest girl in the world</a>
+                        </h4>
+                        <div class="text-gray-600 mt-3 line-clamp-3">
+                            Zeynep is amazing because Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quo iste, dignissimos necessitatibus quibusdam asperiores harum odit eligendi, nihil doloribus dolorem tempore rerum rem quod dolore voluptas debitis natus ea provident nostrum dolores eum eveniet! Obcaecati corporis deserunt ea, labore sint doloremque architecto maiores sequi consequuntur nam eveniet pariatur voluptatem!
                         </div>
-                        <div class="flex items-center space-x-2">
-                            <div class="bg-gray-200 text-xs font-bold uppercase leading-none rounded-full text-center w-28 h-7 py-2 px-4">
-                                Open
+                        <div class="flex justify-between mt-6">
+                            <div class="flex items-center text-xs font-semibold space-x-2 text-gray-400">
+                                <span>10 hours ago</span>
+                                <div>&bull;</div>
+                                <span>Category 1</span>
+                                <div>&bull;</div>
+                                <span class="text-gray-700">3 Comments</span>
                             </div>
-                            <button class="bg-gray-100 hover:bg-gray-200 rounded-full h-7 transition duration-150 ease-in relative">
-                                <svg class="w-8 h-8 fill-current text-gray-300"id="Lager_1" style="enable-background:new -265 388.9 64 64;" version="1.1" viewBox="-265 388.9 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><circle cx="-218.7" cy="422.2" r="4.7"/><circle cx="-232" cy="422.2" r="4.7"/><circle cx="-245.3" cy="422.2" r="4.7"/></g></svg>
-                                <ul class="absolute w-44 font-semibold bg-white shadow-lg rounded-xl py-3 text-left">
-                                    <li><a href="#" class="hover:bg-gray-100 px-5 py-3 transition duration-150 ease-in block">Mark as Spam</a></li>
-                                    <li><a href="#" class="hover:bg-gray-100 px-5 py-3 transition duration-150 ease-in block">Delete Post</a></li>
-                                </ul>
-                            </button>
+                            <div class="flex items-center space-x-2">
+                                <div class="bg-gray-200 text-xs font-bold uppercase leading-none rounded-full text-center w-28 h-7 py-2 px-4">
+                                    Open
+                                </div>
+                                <button class="bg-gray-100 hover:bg-gray-200 rounded-full h-7 transition duration-150 ease-in relative">
+                                    <svg class="w-8 h-8 fill-current text-gray-300"id="Lager_1" style="enable-background:new -265 388.9 64 64;" version="1.1" viewBox="-265 388.9 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><circle cx="-218.7" cy="422.2" r="4.7"/><circle cx="-232" cy="422.2" r="4.7"/><circle cx="-245.3" cy="422.2" r="4.7"/></g></svg>
+                                    <ul class="absolute w-44 font-semibold bg-white shadow-lg rounded-xl py-3 text-left">
+                                        <li><a href="#" class="hover:bg-gray-100 px-5 py-3 transition duration-150 ease-in block">Mark as Spam</a></li>
+                                        <li><a href="#" class="hover:bg-gray-100 px-5 py-3 transition duration-150 ease-in block">Delete Post</a></li>
+                                    </ul>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </a>
         <div class="idea-container bg-white rounded-xl flex hover:shadow-card transition duration-350 ease-in cursor-pointer">
             <div class="border-r border-gray-100 px-5 py-8">
                 <div class="text-center">
@@ -78,11 +82,13 @@
                     <button class="w-20 bg-blue text-white font-bold text-xs uppercase rounded-xl px-4 py-3 border border-gray-200 hover:border-gray-400 transition duration-150 ease-in">Voted</button>
                 </div>
             </div>
-            <div class="flex px-2 py-6">
-                <a href="#" class="flex-none">
-                    <img src="https://source.unsplash.com/200x200/?face&crop=face&v=2" alt="avatar" class="w-14 h-14 rounded-xl">
-                </a>
-                <div class="mx-4">
+            <div class="flex flex-1 px-2 py-6">
+                <div class="flex-none">
+                    <a href="#">
+                        <img src="https://source.unsplash.com/200x200/?face&crop=face&v=2" alt="avatar" class="w-14 h-14 rounded-xl">
+                    </a>
+                </div>
+                <div class="mx-4 w-full">
                     <h4 class="text-xl font-semibold">
                         <a href="#" class="hover:underline">Eren is the most handsome guy, ever??</a>
                     </h4>
@@ -123,11 +129,13 @@
                     <button class="w-20 bg-gray-200 font-bold text-xs uppercase rounded-xl px-4 py-3 border border-gray-200 hover:border-gray-400 transition duration-150 ease-in">Vote</button>
                 </div>
             </div>
-            <div class="flex px-2 py-6">
-                <a href="#" class="flex-none">
-                    <img src="https://source.unsplash.com/200x200/?face&crop=face&v=3" alt="avatar" class="w-14 h-14 rounded-xl">
-                </a>
-                <div class="mx-4">
+            <div class="flex flex-1 px-2 py-6">
+                <div class="flex-none">
+                    <a href="#">
+                        <img src="https://source.unsplash.com/200x200/?face&crop=face&v=3" alt="avatar" class="w-14 h-14 rounded-xl">
+                    </a>
+                </div>
+                <div class="mx-4 w-full">
                     <h4 class="text-xl font-semibold">
                         <a href="#" class="hover:underline">Normalise poop</a>
                     </h4>

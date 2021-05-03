@@ -34,6 +34,7 @@ module.exports = {
                 'card': '4px 4px 15px 0 rgba(36, 37, 38, 0.08)',
             },
             spacing: {
+                22: '5.5rem',
                 70: '17.5rem',
                 175: '43.75rem',
             },
