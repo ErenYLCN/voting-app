@@ -19,8 +19,9 @@
     <body class="font-sans text-sm text-gray-900S bg-gray-background">
         
         <header class="flex items-center justify-between px-8 py-4">
-            <a href="#"> 
-                <img src="{{ asset('img/logo.svg') }}" alt="logo">
+            <a href="#" class="flex items-center space-x-1"> 
+                <img src="{{ asset('img/vote-logo.svg') }}" class="w-8 h-8" alt="logo">
+                <span class="text-3xl font-semibold text-blue">V<span class="text-xl">ote</span><span class="text-blue-hover text-2xl">M</span><span class="text-blue-hover text-xl">e</span></span>
             </a>
             <div class="flex items-center space-x-2">
                 <a href="#">
