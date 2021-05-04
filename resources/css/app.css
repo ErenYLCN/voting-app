@@ -2,6 +2,10 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+[x-cloak] {
+    display: none !important;
+}
+
 .comments-container::before {
     content: "";
     position: absolute;
@@ -56,3 +60,4 @@
     background: theme('colors.purple');
     opacity: 1;
 }
+

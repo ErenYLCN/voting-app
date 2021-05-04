@@ -55,13 +55,17 @@
                                 <div>&bull;</div>
                                 <span class="text-gray-700">3 Comments</span>
                             </div>
-                            <div class="flex items-center space-x-2">
+                            <div x-data="{ isOpen: false }" class="flex items-center space-x-2">
                                 <div class="bg-gray-200 text-xs font-bold uppercase leading-none rounded-full text-center w-28 h-7 py-2 px-4">
                                     Open
                                 </div>
-                                <button class="bg-gray-100 hover:bg-gray-200 rounded-full h-7 transition duration-150 ease-in relative">
+                                <button @click="isOpen = !isOpen" class="bg-gray-100 hover:bg-gray-200 rounded-full h-7 transition duration-150 ease-in relative">
                                     <svg class="w-8 h-8 fill-current text-gray-300"id="Lager_1" style="enable-background:new -265 388.9 64 64;" version="1.1" viewBox="-265 388.9 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><circle cx="-218.7" cy="422.2" r="4.7"/><circle cx="-232" cy="422.2" r="4.7"/><circle cx="-245.3" cy="422.2" r="4.7"/></g></svg>
-                                    <ul class="absolute w-44 font-semibold bg-white shadow-lg rounded-xl py-3 text-left">
+                                    <ul 
+                                    x-cloak 
+                                    x-show.transition.origin.top.left="isOpen" 
+                                    @click.away="isOpen = false" 
+                                    class="absolute w-44 font-semibold bg-white shadow-lg rounded-xl py-3 text-left">
                                         <li><a href="#" class="hover:bg-gray-100 px-5 py-3 transition duration-150 ease-in block">Mark as Spam</a></li>
                                         <li><a href="#" class="hover:bg-gray-100 px-5 py-3 transition duration-150 ease-in block">Delete Post</a></li>
                                     </ul>

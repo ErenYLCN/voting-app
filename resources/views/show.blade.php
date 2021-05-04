@@ -29,13 +29,17 @@
                         <div>&bull;</div>
                         <span class="text-gray-700">3 Comments</span>
                     </div>
-                    <div class="flex items-center space-x-2">
+                    <div class="flex items-center space-x-2" x-data="{ isOpen: false }">
                         <div class="bg-gray-200 text-xs font-bold uppercase leading-none rounded-full text-center w-28 h-7 py-2 px-4">
                             Open
                         </div>
-                        <button class="bg-gray-100 hover:bg-gray-200 rounded-full h-7 transition duration-150 ease-in relative">
+                        <button @click="isOpen = !isOpen" class="bg-gray-100 hover:bg-gray-200 rounded-full h-7 transition duration-150 ease-in relative">
                             <svg class="w-8 h-8 fill-current text-gray-300"id="Lager_1" style="enable-background:new -265 388.9 64 64;" version="1.1" viewBox="-265 388.9 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><circle cx="-218.7" cy="422.2" r="4.7"/><circle cx="-232" cy="422.2" r="4.7"/><circle cx="-245.3" cy="422.2" r="4.7"/></g></svg>
-                            <ul class="hidden absolute w-44 font-semibold bg-white shadow-lg rounded-xl py-3 text-left">
+                            <ul 
+                            x-cloak 
+                            x-show.transition.origin.top.left="isOpen" 
+                            @click.away="isOpen = false" 
+                            class="absolute w-44 font-semibold bg-white shadow-lg rounded-xl py-3 text-left">
                                 <li><a href="#" class="hover:bg-gray-100 px-5 py-3 transition duration-150 ease-in block">Mark as Spam</a></li>
                                 <li><a href="#" class="hover:bg-gray-100 px-5 py-3 transition duration-150 ease-in block">Delete Post</a></li>
                             </ul>
@@ -46,12 +50,16 @@
         </div>
     </div>
     <div class="flex items-center justify-between ml-3">
-        <div class="flex items-center space-x-3 py-8">
+        <div class="flex items-center space-x-3 py-8" x-data="{ setStatusOpen: false, replyOpen: false }">
             <div class="relative">
-                <button class="px-10 py-2 bg-blue text-white font-semibold rounded-xl hover:bg-blue-hover transition duration-150 ease-in text-xs">
+                <button @click="replyOpen = !replyOpen; setStatusOpen = false" class="px-10 py-2 bg-blue text-white font-semibold rounded-xl hover:bg-blue-hover transition duration-150 ease-in text-xs">
                     <span>Reply</span>
                 </button>
-                <div class="hidden absolute z-10 w-104 text-left font-semibold text-sm bg-white shadow-lg rounded-xl mt-2">
+                <div 
+                x-cloak 
+                x-show.transition.origin.top.left="replyOpen" 
+                @click.away="replyOpen = false"
+                class="absolute z-10 w-104 text-left font-semibold text-sm bg-white shadow-lg rounded-xl mt-2">
                     <form action="#" class="space-y-4 px-4 py-6">
                         <div>
                             <textarea name="post_comment" id="post_comment" cols="30" rows="4" class="w-full bg-gray-100 rounded-xl placeholder-gray-600 text-sm px-4 py-2 border-none" placeholder="Go ahead, don't be shy. Share your thoughts..."></textarea>
@@ -69,11 +77,15 @@
                 </div>
             </div>
             <div class="relative">
-                <button type="button" class="bg-gray-200 w-36 rounded-xl flex items-center justify-center space-x-1 px-6 py-2 text-xs font-semibold border border-gray-200 hover:border-gray-400 transition duration-150 ease-in">
+                <button @click="setStatusOpen = !setStatusOpen; replyOpen = false" type="button" class="bg-gray-200 w-36 rounded-xl flex items-center justify-center space-x-1 px-6 py-2 text-xs font-semibold border border-gray-200 hover:border-gray-400 transition duration-150 ease-in">
                     <span>Set Status</span>
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </button>
-                <div class="absolute z-20 w-76 text-left font-semibold text-sm bg-white shadow-lg rounded-xl mt-2">
+                <div 
+                x-cloak 
+                x-show.transition.origin.top.left="setStatusOpen" 
+                @click.away="setStatusOpen = false" 
+                class="absolute z-20 w-76 text-left font-semibold text-sm bg-white shadow-lg rounded-xl mt-2">
                     <form action="#" class="space-y-4 px-4 py-6">
                         <div class="mt-2 space-y-2">
                             <div>
